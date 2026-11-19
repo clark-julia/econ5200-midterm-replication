@@ -1,16 +1,11 @@
-# TODO: Replicating Author (Year), "Title of the paper"
-
-> **Template note, delete before you submit.** This is the ECON 5200 replication template.
-> Replace every line that starts with `TODO:`. The grader clones this repository into an
-> empty directory, builds the environment from `requirements.txt` and runs the one command
-> below. The number this README claims must be the number that run produces.
+# Replicating Hansen (2015), "Punishment and Deterrence: Evidence from Drunk Driving"
 
 ## The paper and its headline claim
 
-- **Paper:** TODO: full citation (authors, year, title, journal, volume, pages).
-- **Identification strategy:** TODO: difference-in-differences / instrumental variables / regression discontinuity / matching.
-- **Headline claim:** TODO: one sentence, with the number and where it is in the paper (for example, Table 2, column 3).
-- **My replication:** TODO: my number beside theirs, and the gap in percent, as `python reproduce.py` prints it.
+- **Paper:** Hansen, Benjamin. 2015. "Punishment and Deterrence: Evidence from Drunk Driving." *American Economic Review* 105(4): 1581-1617.
+- **Identification strategy:** Regression discontinuity. Drivers stopped with a blood alcohol content (BAC) of 0.08 or higher face harsher punishment (DUI), and 0.15 or higher harsher still (aggravated DUI). I compare drivers just above and just below each cutoff.
+- **Headline claim:** Crossing the 0.08 cutoff lowers recidivism by about 2.1 percentage points (Table 3, Panel A, Bandwidth 0.05)
+- **My replication:** -0.0222 (SE 0.0041, clustered by BAC) against the paper's -0.021, there is a gap of ~5.7%.
 
 ## Reproduce the headline table
 
@@ -33,21 +28,11 @@ outputs, go to `output/executed/`.
 
 ## Data: source and licence
 
-- **Source:** TODO: the URL in `download_data.py` for your paper, and who produced the original data.
-- **Included or downloaded:** TODO: say which, and why.
-
-The template downloads by default: `.gitignore` excludes `data/*.dta`, and
-`download_data.py` fetches the files on the first run. Two facts to check before you
-decide:
-
-- The five files from `scunning1975/mixtape` (castle, card, lee, hansen, abortion) are in a
-  repository under an MIT-style licence that permits copies if its notice is kept. The
-  underlying data were collected by the original authors.
-- The Dehejia-Wahba files on `users.nber.org/~rdehejia` state no licence. Download them;
-  do not commit them.
-
-If you decide to include the data, delete the `data/*.dta` line from `.gitignore`, commit
-the files with the licence notice, and say so above.
+- **Source:** hansen_dwi.dta` from the `scunning1975/mixtape` repository on GitHub
+  (URL set in `download_data.py`). It contains 214,558 Washington State drunk-driving stops from 1999 to 2007. The underlying data were collected by Benjamin Hansen for the original paper.
+**Included or downloaded:** Downloaded on the first run (about 9.5 MB) and not committed to the repository, following the template default. The mixtape repository is under an MIT-style licence that permits copies if its notice is kept.
+- The five files from `scunning1975/mixtape` (castle, card, lee, hansen, abortion) are in a repository under an MIT-style licence that permits copies if its notice is kept. The underlying data were collected by the original authors.
+- The Dehejia-Wahba files on `users.nber.org/~rdehejia` state no licence. Download them; do not commit them.
 
 ## Repository map
 
