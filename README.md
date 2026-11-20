@@ -49,11 +49,11 @@ outputs, go to `output/executed/`.
 | `AUDIT.md` | How to run the peer audit you file on a classmate's repository |
 | `requirements.txt` | Pinned package versions |
 
-TODO: add a row for every file you add.
 
 ## Use of AI
 
 Sections 1 and 2 were completed without AI.
 
-TODO: list the sections where you used AI (from 3, 4, 5 and 6), for what, and point to the
-entries in [`ai-appendix.md`](ai-appendix.md). If you used none, say so.
+Section 3 I used AI to help interpret results, fix syntax and build some code to help organize results.
+Section 4 I used AI to help edit my writing and asked if my explainations were strong. 
+entries in [`ai-appendix.md`](ai-appendix.md). 
